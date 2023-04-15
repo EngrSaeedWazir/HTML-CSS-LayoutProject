@@ -1,0 +1,312 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+  /* BASE STYLES
+  /*******************************************/
+
+body {
+}
+
+/******************************************
+  /* LAYOUT
+  /*******************************************/
+header {
+  height: 55px;
+  background: rgba(102, 118, 138, 255);
+  color: white;
+  /* margin: -7px 0 0 62px; */
+}
+nav * {
+  float: left;
+  width: 10%;
+  color: white;
+  display: block;
+  text-transform: uppercase;
+}
+nav ul {
+  width: 72%;
+  margin: 8px 0 0 47px;
+}
+.nav i {
+  margin: 8px 0 0 -350px;
+  color: white;
+  font-size: 135%;
+}
+.nav button {
+  color: black;
+  margin: 8px 0 0 105px;
+  width: 7%;
+}
+main {
+  background: rgba(102, 118, 138, 255);
+  height: 500px;
+  margin-top: -21px;
+  padding-top: 37px;
+  color: white;
+  text-align: center;
+}
+
+.main h1 {
+  text-align: center;
+}
+.main p {
+  text-align-last: center;
+}
+main > span {
+  position: relative;
+  top: 36px;
+}
+main a {
+  text-decoration: none;
+  color: white;
+}
+main > .span2 {
+  position: relative;
+  top: 70px;
+}
+.section1 {
+  height: 350px;
+  margin-top: -20px;
+  /* padding-top: 37px; */
+  color: black;
+  text-align: center;
+}
+.section1 h2 {
+  padding-top: 60px;
+}
+.section1 p {
+  text-align-last: center;
+}
+
+.section2 {
+  background: #dbdfe2;
+  width: 100%;
+  overflow: hidden;
+}
+
+.nested-section2 {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 41px 74px 41px 142px;
+  text-align-last: center;
+}
+.nested-section2 a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.section3 {
+  height: 450px;
+  margin-top: -18px;
+  /* padding-top: 37px; */
+  color: black;
+  text-align: center;
+  padding: 58px;
+  text-align-last: center;
+}
+.section3 h2,
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+.section3 a {
+  border: 1px solid black;
+  padding: 10px;
+}
+.footer {
+  background: #161f2a;
+  padding: 20px;
+  overflow: hidden;
+  padding: 44px;
+  color: white;
+}
+.footer-left {
+  float: left;
+  width: 50%;
+}
+.footer-left h6 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #dcdce3;
+}
+
+.footer-left ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-left li {
+  margin-bottom: 0px;
+  font-size: 14px;
+  line-height: 1.5;
+  display: inline-block;
+  width: 23px;
+}
+.footer-left li a,
+.footerul2 li a {
+  color: white;
+}
+.footerul2 li {
+  width: 60px;
+  font-size: 12px;
+  color: white;
+}
+.footerul3 li {
+  width: 46px;
+  font-size: 12px;
+}
+.footer-right {
+  margin-top: -40px;
+  float: right;
+}
+
+.footer-right h6 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-right a {
+  color: #333;
+  text-decoration: none;
+}
+.footer-center {
+  margin-top: 220px;
+}
+.footer-center i {
+  margin-top: -39px;
+  float: right;
+}
+/******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  /* header */
+
+  /* Adjust the font size of the h1 tag */
+  h1 {
+    font-size: 28px;
+  }
+
+  /* Adjust the width of the main tag */
+  main {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Adjust the width of the nested-section2 section */
+  .nested-section2 {
+    width: 100%;
+  }
+
+  /* Adjust the width of the footer */
+  .footer {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile-first responsive styling */
+@media screen and (max-width: 480px) {
+  /* Adjust the font size of the h1 tag */
+  h1 {
+    font-size: 24px;
+  }
+
+  /* Adjust the font size of the p tag */
+  p {
+    font-size: 16px;
+  }
+
+  /* Adjust the font size of the h2 tag */
+  h2 {
+    font-size: 20px;
+  }
+
+  /* Adjust the width of the main tag */
+  main {
+    width: 100%;
+    margin: 0px;
+    padding: 36px;
+    margin-top: -17px;
+  }
+  /* Adjust Nav */
+
+  nav * {
+    float: left;
+    width: 33%;
+    color: white;
+    display: block;
+    text-transform: uppercase;
+  }
+  nav ul {
+    width: 62%;
+    margin: 8px 0 0 -31px;
+  }
+  .nav i {
+    margin: 8px 0 0 -24px;
+    color: white;
+    font-size: 135%;
+  }
+  .nav button {
+    color: black;
+    margin: 8px 0 0 -7px;
+    width: 18%;
+  }
+
+  /* Adjust the width of the nested-section2 section */
+  .nested-section2 {
+    margin-left: -24px;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  /* Adjust the width of the footer */
+  .footer {
+    width: 100%;
+    margin: 0;
+    padding: 8px;
+  }
+  .footer-center i {
+    margin-top: -53px;
+    float: right;
+  }
+}

@@ -1,0 +1,251 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+  /* BASE STYLES
+  /*******************************************/
+
+body {
+}
+
+/******************************************
+  /* LAYOUT
+  /*******************************************/
+header {
+  height: 55px;
+  background: #f5f9fc;
+}
+nav * {
+  color: black;
+  float: left;
+  display: block;
+  text-decoration: none;
+}
+nav ul {
+  width: 66%;
+  margin: 8px 0 0 262px;
+}
+nav li {
+  margin: 3px 0 0 50px;
+}
+header > nav > a {
+  background: black;
+  margin: 8px 0 0 -100px;
+  border: 1px solid;
+
+  color: white;
+  padding: 2px 9px;
+}
+nav > i {
+  margin: 7px 0 0 98px;
+  background: black;
+  color: white;
+  padding: 0 2px 0 2px;
+}
+
+main {
+  background: #f5f9fc;
+  height: 600px;
+  margin-top: -21px;
+}
+
+.main .section1 {
+  padding: 62px;
+  width: 50%;
+  height: 300px;
+  float: left;
+}
+.main .section1 * {
+  margin-left: 62px;
+}
+.left {
+  margin-right: -62px;
+  float: left;
+}
+
+.right {
+  background: black;
+  color: white;
+  text-decoration: none;
+  float: left;
+  padding: 2px 9px;
+  border: 1px solid #000;
+}
+
+.wrapper:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main > .section1 .wrapper {
+  margin-left: 4px;
+}
+.main .section2 {
+  width: 50%;
+  height: 300px;
+  float: right;
+}
+.main .section2 img {
+  margin: 35px 0 0 58px;
+  max-width: 100%;
+  max-height: 300px;
+}
+.main .section2 * {
+  margin-right: 10px;
+}
+.main .section3,
+.section4,
+.section5,
+.section6 {
+  margin-right: -16px;
+  width: 20%;
+  float: left;
+  padding: 60px;
+  margin-left: 64px;
+}
+.section7 {
+  float: left;
+  padding: 0px;
+  margin-left: 120px;
+  width: 40%;
+}
+
+footer {
+}
+
+/******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+@media only screen and (max-width: 480px) {
+  header {
+    height: 60px;
+  }
+  header {
+    /* height: 59px; */
+
+    margin-bottom: -7px;
+    background: #f5f9fc;
+  }
+  nav {
+    display: block;
+    width: 100%;
+    height: auto;
+    float: none;
+    /* display: block; */
+  }
+  nav li {
+    display: none;
+    width: 100%;
+    float: none;
+  }
+
+  nav a {
+    display: none;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #555;
+  }
+  header > nav > i {
+    margin-top: 22px;
+    float: left;
+    display: block;
+    /* margin: 42px 0 0 -147px; */
+    background: black;
+    color: white;
+    padding: 0 2px 0 2px;
+    margin-left: 231px;
+  }
+  .menu-toggle {
+    float: left;
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-top: -26px;
+    margin-right: 320px;
+    cursor: pointer;
+    margin-left: 17px;
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 5px;
+  }
+
+  .menu-toggle span:last-child {
+    margin-bottom: 0;
+  }
+  main {
+    background: #f5f9fc;
+    height: 1564px;
+    margin-top: -9px;
+  }
+  .main .section1 {
+    /* text-align: center; */
+    margin-left: 68px;
+    margin-top: 47px;
+    /* margin-top: 22px; */
+    padding: 0px;
+    width: 50%;
+    height: 300px;
+    /* float: left; */
+  }
+  .left {
+    margin-right: -62px;
+    /* float: left; */
+  }
+  .right {
+    margin-top: 10px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    float: left;
+    padding: 2px 78px;
+    border: 1px solid #000;
+  }
+  .main .section2 {
+    /* margin-left: 19px; */
+    margin-top: 70px;
+    width: 61%;
+    height: 234px;
+    /* float: right; */
+    margin-right: 145px;
+  }
+  .main .section3,
+  .section4,
+  .section5,
+  .section6 {
+    /*margin-right: -16px; */
+    width: 78%;
+    /* float: left; */
+    /* padding: 239px; */
+    margin-left: 82px;
+    margin-top: -17px;
+    padding: 40px;
+  }
+  .section7 {
+    margin-top: 38px;
+    /* float: left; */
+    padding: 0px;
+    margin-left: 120px;
+    width: 40%;
+  }
+}

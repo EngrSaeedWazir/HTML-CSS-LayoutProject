@@ -1,0 +1,335 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+  /* BASE STYLES
+  /*******************************************/
+
+body {
+}
+
+/******************************************
+  /* LAYOUT
+  /*******************************************/
+nav {
+  margin-top: -9px;
+  margin-right: 229px;
+  display: block;
+  float: right;
+  padding: 10px;
+  background-image: inherit;
+}
+nav ul {
+  display: flex;
+  flex-direction: column-row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+}
+nav ul li a {
+  color: black;
+  display: block;
+
+  padding: 10px;
+  text-decoration: none;
+}
+nav > form {
+  margin-top: -32px;
+  float: right;
+  margin-right: -94px;
+}
+nav > i {
+  font-size: 30px;
+  /* padding: 3px; */
+  margin-right: -40px;
+  margin-top: -28px;
+  float: right;
+}
+.bgimg {
+  background-image: url("../images/dieta+skin.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main {
+  margin-top: 0px;
+  height: 500px;
+}
+.main .section1 {
+  margin-left: 67px;
+  padding: 60px;
+  width: 40%;
+  height: 300px;
+  float: left;
+}
+.wrapper {
+  float: left;
+  clear: both;
+}
+.left {
+  margin-right: 0;
+
+  font-size: 18px;
+}
+.right {
+  float: right;
+  /* margin-left: 0px; */
+  background: orange;
+  color: white;
+  text-decoration: none;
+  padding: 3.3px 18px;
+  border: 1px solid #000;
+  margin-top: 0px;
+}
+.main ul {
+  margin-top: 80px;
+  color: black;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+.main ul li {
+  margin-left: -10px;
+  width: 84px;
+  color: black;
+  float: left;
+  display: block;
+  text-decoration: none;
+}
+.main ul li i {
+  color: orange;
+}
+
+.bgimg2 {
+  background-image: url("../images/cookies-breakfast.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 94vh;
+}
+
+.div2 {
+  position: relative;
+}
+
+.div2 {
+  padding: 118px;
+  text-align: justify;
+  /* text-align-last: auto; */
+  position: absolute;
+  top: 83%;
+  left: 47%;
+}
+
+.div2 span {
+  font-size: 1.2rem;
+}
+
+.div2 h2 {
+  font-size: 2rem;
+}
+.div2 p {
+  font-size: 1.4rem;
+}
+.div2 a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 1.4rem;
+  border: 1px solid orange;
+  background: orange;
+}
+.section3 {
+  background: #f0f6f6;
+  height: 400px;
+}
+
+.section3 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div3a {
+  width: 100%;
+  height: 100%;
+}
+
+.div3b {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.div3b span {
+  position: relative;
+  top: 11px;
+  color: orange;
+  font-size: 1rem;
+}
+
+.div3b h3 {
+  font-size: 1.5rem;
+  position: relative;
+  top: 8px;
+}
+
+.div3b ul {
+  list-style: none;
+  margin: -2px;
+  padding: 0px;
+  text-align: left;
+  margin-left: 429px;
+}
+
+.div3b li {
+  padding: -22px;
+  display: inline-block;
+  font-size: 1;
+  margin-bottom: 6.5rem;
+  margin-left: 36px;
+}
+.div3b a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  top: 12px;
+}
+.div3b a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+}
+
+.row img {
+  position: relative;
+  top: -74px;
+  display: block;
+  max-width: 100%;
+  height: 200px;
+  margin: 10px;
+}
+.section4 {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #e0dfdc;
+}
+
+.section4a {
+  margin-top: 38px;
+  flex-basis: 100%;
+  text-align: center;
+}
+.section4a .orange {
+  color: orange;
+}
+.section4a h3 {
+  position: relative;
+  top: -8px;
+}
+
+.section4b {
+  margin-left: 481px;
+
+  /* flex-basis: calc((100% - 500px) / 2); Adjust as needed */
+}
+.section4b > h4 {
+  position: relative;
+  top: -8px;
+}
+.section4b > span {
+  position: relative;
+  top: -41px;
+}
+
+.section4c {
+  margin-right: 481px;
+  /* flex-basis: calc((100% - 500px) / 2); Adjust as needed */
+}
+.section4c > h4 {
+  position: relative;
+  top: -8px;
+}
+.section4c > span {
+  position: relative;
+  top: -41px;
+}
+
+.image {
+  position: relative;
+  top: 32px;
+  display: block;
+  max-width: 100%;
+  height: 309px;
+  margin: 452px;
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+}
+.section5 {
+  text-align: center;
+  margin-top: 41px;
+}
+.section5 p {
+  margin: 10px 201px;
+  padding: 10px;
+}
+.section5 img {
+  margin-right: 59px;
+  margin-left: 60px;
+  width: 89px;
+  height: auto;
+  border-radius: 50%;
+}
+.section5 .spanN {
+  position: relative;
+  top: 10px;
+}
+.section5 .spanA {
+  position: relative;
+  top: 10px;
+}
+.section5 .spant {
+  color: orange;
+}
+.section5 .fa {
+  margin-top: 16px;
+  color: orange;
+}
+
+footer {
+}
+
+/******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
